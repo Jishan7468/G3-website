@@ -3,23 +3,34 @@
   font-family: "Work Sans", sans-serif;
 
 }
+
 *{
   margin: 0;
 }
 /* shared style */
-.flex{
+.flex,.banner-content{
   display: flex;
 }
 .dark02{
   color: #424242;
 }
+.p-btn{ 
+                /*basic design for all buttons*/
+  background-color: #FF900E;
+  color: #FFFFFF;
+  padding: 20px 25px;
+  border: 0;
+  border-radius: 8px;
+}
 /* others */
 header{
   background-color: rgba(255, 144, 14, 0.1);
+
 }
 .navbar{
   justify-content: space-between;
   padding: 20px;
+  align-items: center;
   
 
 }
@@ -30,9 +41,37 @@ header{
 .navbar a{
   text-decoration: none;
 }
- 
+ .navbar h3{
+  font-weight: 700;
+  font-size: 2.5rem;
+ }
+ /* banner section */
 
 .navbar,.banner{
   max-width: 1200px;
+  margin: 0 auto;
+}
+.banner-img{
+
+}
+.banner-content{
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 26px;
+  flex-direction: column;
+  gap: 32px;
+ 
+  
+}
+.banner-img img{
+  width: 100%;
+  vertical-align: middle;
+}
+.banner-content p{
+  max-width: 868px;
+  margin: 0 auto;
+}
+.p-btn{
+  max-width: max-content;
   margin: 0 auto;
 }
