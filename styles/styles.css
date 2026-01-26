@@ -159,6 +159,9 @@ header{
   flex-direction: column;
   gap: 20px;
  }
+ .navbar li{
+  margin-right: 0;
+ }
  .nav-contents{
   font-size: 1.2rem;
  }
@@ -167,5 +170,14 @@ header{
  }
  .text-container{
   padding: 20px;
+ }
+ .nav-contents{
+  padding-left:0 ;
+ }
+ .navbar a {
+  padding: 0px;
+  margin-left: 8px;
+
+
  }
 }
