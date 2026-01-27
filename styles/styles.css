@@ -17,6 +17,10 @@
 .dark02{
   color: #424242;
 }
+.dark01{
+  color: #131313;
+}
+
 
 .p-btn{ 
                 /*basic design for all buttons*/
@@ -54,7 +58,7 @@ header{
  }
  /* banner section */
 
-.navbar,.banner{
+.navbar,.banner,.facts-container,.footer{
   max-width: 1200px;
   margin: 0 auto;
   
@@ -153,7 +157,55 @@ header{
   color: #FF900E;
   font-weight: 700;
 }
+/* facts design */
+.facts-container{
+  margin-top: 100px;
+}
+.facts-container p{
+  font-size: 1em;
+  line-height: 26px;
+  margin-top: 24px;
+  max-width: 540px;
+}
+.facts-container h2{
+  font-weight: 700;
+  font-size: 2.5em;
 
+
+}
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-top: 40px;
+ 
+
+}
+
+.cards{
+  border: 1px solid #FF900E;
+  width: 240px;
+  height: 230px;
+  border-radius:8px ;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ 
+ 
+}
+.cards .number{
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.cards .text{
+  margin-top: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+
+}
+.footer{
+  height: 5vh;
+}
 @media screen and (max-width:700px) {
  .navbar,.banner-content,.grid-container{
   flex-direction: column;
@@ -164,20 +216,61 @@ header{
  }
  .nav-contents{
   font-size: 1.2rem;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 0;
+  
  }
+ .nav-contents a:hover{
+
+
+ }
+
  .img-grid{
   grid-template-columns: repeat(1,1fr);
  }
  .text-container{
   padding: 20px;
  }
- .nav-contents{
-  padding-left:0 ;
- }
+ 
  .navbar a {
   padding: 0px;
   margin-left: 8px;
 
 
  }
+ /* facts */
+ .facts-container{
+  margin: 0 auto;
+  padding: 20px;
+ 
+ }
+ .card-container{
+  grid-template-columns: repeat(1,1fr);
+  place-items: center;
+ }
+ .cards{
+  margin-top: 20px;
+ }
+
+}
+@media screen and (min-width:576px) and (max-width:992px){
+  .grid-container{
+    flex-direction: column;
+  }
+  .text-container,.facts-container{
+    margin: 28px auto;
+    max-width: 500px;
+    
+  }
+ 
+ .card-container{
+  grid-template-columns: repeat(2,1fr);
+  place-items: center;
+ }
+ .cards{
+  margin: 5px;
+  
+ }
+
 }
