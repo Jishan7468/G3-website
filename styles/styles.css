@@ -10,6 +10,7 @@
 
 }
 
+
 /* shared style */
 .flex,.banner-content{
   display: flex;
@@ -57,6 +58,7 @@ header{
   font-size: 2.5rem;
  }
  /* banner section */
+ /* share width */
 
 .navbar,.banner,.facts-container,.footer,#features,#sponser{
   max-width: 1200px;
@@ -243,7 +245,7 @@ header{
   border-radius: 8px;
   background-color: #ffffff;
   margin-top: 15px;
-  box-shadow: 0px 4px 4px 0 hsl(0, 4%, 50%);
+  box-shadow: 0px 4px 4px 0 hsl(0, 4%, 90%);
 
 }
 .feature-card h4{
@@ -300,11 +302,37 @@ header{
   max-width: 130px;
  
 }
+/* footer */
+.footer{
+
+  height: 28vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer div{
+  display: flex;
+  align-items: center;
+  justify-content: center;;
+  width: 1200px;
+  background-color: #FFF4E7;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 1.20rem;
+  color: #424242;
+  max-width: 100%;
+}
+
 
 @media screen and (max-width:576px) {
  .navbar,.banner-content,.grid-container,#features{
   flex-direction: column;
   gap: 20px;
+ }
+ .footer div{
+  padding: 10px;
+  font-size: 0.8rem;
  }
  /* features */
  #features{
